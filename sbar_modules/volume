@@ -1,0 +1,7 @@
+#!/bin/bash
+
+function volume {
+	echo $(amixer get Master | grep Right | grep -E -o '[0-9]{1,3}%')
+}
+
+volume
