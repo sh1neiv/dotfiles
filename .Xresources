@@ -1,0 +1,18 @@
+URxvt.font: xft:jetbrains mono:size=10
+URxvt.depth: 32
+URxvt.background: rgba:1111/1111/1111/bbbb
+URxvt.foreground: #ffffff
+URxvt.letterSpace: -1
+URxvt.scrollBar: false
+URxvt.scrollTtyOutput: false
+URxvt.scrollWithBuffer: true
+URxvt.internalBorder: 25
+
+URxvt.color0: #000000
+URxvt.color1: #fa4b3e
+URxvt.color2: #42fa3e
+URxvt.color3: #d5fc5b
+URxvt.color4: #423efa
+URxvt.color5: #fa3ede
+URxvt.color6: #3efae4
+URxvt.color11:#fc9c5b
