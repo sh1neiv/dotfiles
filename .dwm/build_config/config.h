@@ -68,8 +68,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_brown, "-nf", col_orange, "-sb", col_dbrown, "-sf", col_orange, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
-static const char *scrot_fs[] = {"scrot", "~/scr/desktop_%y-%m-%d_%h-%m.png"};
-static const char *scrot_crop[] = {"scrot", "-s", "/home/shine/scr/desktop_%Y-%m-%d_%H-%M-%S.png"};
+static const char *scrot_crop[] = {"scrot", "-s", "${HOME}/scr/desktop_%y-%m-%d_%h-%m.png", "--freeze", NULL};
 
 static const Key keys[] = {
 	/* modifier                     key       function        argument */
@@ -96,7 +95,6 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	{ 0,				XK_Print,  spawn,	   {.v = scrot_fs } },
 	{ MODKEY|ShiftMask,		XK_s,	   spawn,          {.v = scrot_crop} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
