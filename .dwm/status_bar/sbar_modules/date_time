@@ -1,7 +1,0 @@
-#!/bin/bash
-
-function date_time {
-	echo $(date '+%d.%m.%y %H:%M:%S')
-}
-
-date_time
