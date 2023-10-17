@@ -1,13 +1,13 @@
 ## dotfiles
 ![desktop](screenshots/desktop.png)
-artix
-xorg
-dwm
-rxvt-unicode
+- artix
+- xorg
+- dwm
+- rxvt-unicode
 
-firefox
-neofetch
-mc
-vim
-cmus
-zathura
+- firefox
+- neofetch
+- mc
+- vim
+- cmus
+- zathura
